@@ -1,4 +1,25 @@
 apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  namespace: istio-system
+  name: coffee-gateway-prod
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+    - port:
+        number: 443
+        name: https
+        protocol: HTTPS
+      tls:
+        mode: SIMPLE
+        serverCertificate: /etc/istio/ingressgateway-certs/tls.crt
+        privateKey: /etc/istio/ingressgateway-certs/tls.key
+      hosts:
+      - "coffee-shop-prod.cp4multicloud-ibm.com"
+---
+
+apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
   namespace: istio-system
@@ -7,7 +28,7 @@ spec:
   hosts:
   - "coffee-shop-prod.cp4multicloud-ibm.com"
   gateways:
-  - devready-dashboard-gw
+  - coffee-gateway-prod
   http:
   - match:
     - uri:
