@@ -14,7 +14,7 @@ spec:
   - name: configGitUrl
     value: 'git@github.com:ajoyacharyya/coffee-testing-config.git'
   - name: appImage
-    value: 'docker.ajoyacharyya.com/coffee-testing'
+    value: 'docker.io/ajoyacharyya/coffee-testing'
   workspaces:
   - name: app-source
     emptyDir: {}
