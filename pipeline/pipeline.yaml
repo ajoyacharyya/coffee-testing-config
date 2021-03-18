@@ -40,7 +40,7 @@ spec:
     - name: environment
       value: systemtest
     - name: argo-app-name
-      value: coffee-testing-systemtest
+      value: app-systemtest
     - name: configGitUrl
       value: $(params.configGitUrl)
     - name: appImage
@@ -76,7 +76,7 @@ spec:
     - name: environment
       value: production
     - name: argo-app-name
-      value: coffee-testing-prod
+      value: app-prod
     - name: configGitUrl
       value: $(params.configGitUrl)
     - name: appImage
