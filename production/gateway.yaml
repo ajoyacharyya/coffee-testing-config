@@ -2,7 +2,7 @@ apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:
   namespace: istio-system
-  name: coffee-gateway
+  name: coffee-gateway-prod
 spec:
   selector:
     istio: ingressgateway
@@ -23,12 +23,12 @@ apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
   namespace: istio-system
-  name: coffee-gateway
+  name: coffee-gateway-prod
 spec:
   hosts:
   - "coffee-shop-prod.cp4multicloud-ibm.com"
   gateways:
-  - coffee-gateway
+  - coffee-gateway-prod
   http:
   - match:
     - uri:
