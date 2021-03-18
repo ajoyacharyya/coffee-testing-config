@@ -1,7 +1,7 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:
-  namespace: istio-system
+  name: coffee-gateway-prod
 spec:
   selector:
     istio: ingressgateway
