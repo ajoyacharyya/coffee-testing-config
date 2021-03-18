@@ -10,11 +10,11 @@ spec:
   - name: buildRevision
     value: '56512b4a01fc91026b0d42ba2febb1b61c291903'
   - name: appGitUrl
-    value: 'git@github.com:sdaschner/coffee-testing.git'
+    value: 'git@github.com:ajoyacharyya/coffee-testing.git'
   - name: configGitUrl
-    value: 'git@github.com:sdaschner/coffee-testing-config.git'
+    value: 'git@github.com:ajoyacharyya/coffee-testing-config.git'
   - name: appImage
-    value: 'docker.sebastian-daschner.com/coffee-testing'
+    value: 'docker.ajoyacharyya.com/coffee-testing'
   workspaces:
   - name: app-source
     emptyDir: {}
