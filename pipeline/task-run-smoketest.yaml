@@ -34,7 +34,6 @@ spec:
     args:
     - test-compile
     - failsafe:integration-test
-    - failsafe:verify
     - "-Dcoffee-shop.test.host=$(inputs.params.gateway)"
     - "-Dcoffee-shop.test.port=80"
 ---
