@@ -32,7 +32,7 @@ spec:
     command:
     - /usr/bin/mvn
     args:
-    - verify
+    - test-compile
     - "-Dcoffee-shop.test.host=$(inputs.params.gateway)"
     - "-Dcoffee-shop.test.port=80"
     - "-Dbarista.test.host=$(inputs.params.gateway)"
