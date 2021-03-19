@@ -25,11 +25,11 @@ spec:
         app: coffee-shop
         version: v1
       annotations:
-        revision: "e376b4b00120ef5dfbd13267709e8ca1c31113b1"
+        revision: "9ef06701a2ecc98891ee87bc366e862afed9a886"
     spec:
       containers:
       - name: coffee-shop
-        image: ajoyacharyya/coffee-shop:fb0f69f6c4f423fb2e5e47f29dcf5dbc16cf9437
+        image: ajoyacharyya/coffee-shop:9ef06701a2ecc98891ee87bc366e862afed9a886
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
